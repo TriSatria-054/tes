@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genshinku</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+    header, main, .content, article, aside, footer {
+      border: 1px solid transparent;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    header, article, footer {
+      border-bottom: 2px solid grey;
+    }
+
+    body {
+      font-family: "Quicksand", sans-serif;
+      background: #212529;
+      color: white;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .content {
+      flex: 5;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    aside {
+      flex: 1;
+    }
+
+    nav {
+      margin-left: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+      font-size: 20px;
+      font-weight: bold
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      border-bottom: 2px solid transparent;
+      padding: 10px;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+
+    article:hover {
+      background-color: #343a40;
+      transition: background-color 0.3s ease;
+    }
+
+    aside:hover {
+      background-color: #343a40;
+      transition: background-color 0.3s ease;
+    }
+
+    .search-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 5px;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+
+    .search-input {
+      border: none;
+      background: transparent;
+      color: white;
+      padding: 5px;
+      background-color: #343a40;
+    }
+
+    .search-button {
+      background-color: #FF5733;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .header-flex-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-image: url('genshin.webp'); 
+      background-size: cover;
+      background-position: center;
+    }
+
+    .homepage {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+    }
+
+    #title {
+      padding: 10px;
+    }
+
+    #title:hover {
+      background-color: white;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+
+    footer {
+      border-bottom: none;
+    }
+
+    @media screen and (max-width: 1200px) {
+      main {
+        flex-flow: column nowrap;
+      }
+     
+      main aside {
+        align-self: center;
+      }
+    }
+     
+    @media screen and (max-width: 768px) {
+      .header-flex-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #title {
+        order: 1;
+        margin-bottom: 10px;
+      }
+
+      nav {
+        order: 2;
+        margin-bottom: 10px;
+      }
+
+      .search-container {
+        order: 3;
+        margin-bottom: 10px;
+      }
+
+      #gambar {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header-flex-container">
+    <h1 id="title" style="font-size: 30px;">GENSHINKU</h1>
+    <nav class="homepage">
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Tier List</a></li>
+      </ul>
+    </nav>
+  <div class="search-container">
+    <input type="text" class="search-input" placeholder="Cari artikel...">
+    <button class="search-button">Cari</button>
+  </div>
+  </header>
+  <main class="main-container">
+    <div class="content">
+      <article>
+        <h1>Artikel Pertama</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </article>
+      <article>
+        <h1>Artikel Kedua</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </article>
+      <article>
+        <h1>Artikel Ketiga</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </article>
+      <article>
+        <h1>Artikel Keempat</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </article>
+      <article>
+        <h1>Artikel Kelima</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </article>
+      <article>
+        <h1>Artikel Keenam</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </article>
+      <article>
+        <h1>Artikel Ketujuh</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </article>
+    </div>
+    <aside>
+      <h2>Bar Samping</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      <img src="gambar.webp" width="400" id="gambar">
+    </aside>
+  </main>
+  <footer>
+    <p style="text-align: center;">&copy; 2023 Genshinku. Hak Cipta Dilindungi.</p>
+  </footer>
+</body>
+</html>
